@@ -24,14 +24,10 @@ public class LoginTests {
 	private ScreenShot screenShot;
 
 	@BeforeClass
-	public static void setUpBeforeClass() throws IOException {
+	public void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
-	}
-
-	@BeforeMethod
-	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
@@ -39,6 +35,11 @@ public class LoginTests {
 		// open the browser 
 		driver.get(baseUrl);
 	}
+
+	/*@BeforeMethod
+	public void setUp() throws Exception {
+		
+	}*/
 	
 	@AfterMethod
 	public void tearDown() throws Exception {
@@ -47,9 +48,11 @@ public class LoginTests {
 	}
 	@Test
 	public void validLoginTest() {
-		loginPOM.sendUserName("admin");
-		loginPOM.sendPassword("admin@123");
+		/*loginPOM.sendUserName("ratheesh123");
+		loginPOM.sendPassword("ratheesh123");
 		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+		screenShot.captureScreenShot("First");*/
+		loginPOM.clickSignUp();
+		screenShot.captureScreenShot("SignUp Test");
 	}
 }
