@@ -53,6 +53,6 @@ public class LoginTests {
 		loginPOM.clickLoginBtn(); 
 		screenShot.captureScreenShot("First");*/
 		loginPOM.clickSignUp();
-		screenShot.captureScreenShot("SignUp Test");
+		screenShot.captureScreenShot("SignUp Test 1");
 	}
 }

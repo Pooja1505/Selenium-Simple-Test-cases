@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14060" started-at="2019-06-18T11:35:16Z" finished-at="2019-06-18T11:35:30Z">
+  <suite name="Default suite" duration-ms="30932" started-at="2019-07-22T11:02:00Z" finished-at="2019-07-22T11:02:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14060" started-at="2019-06-18T11:35:16Z" finished-at="2019-06-18T11:35:30Z">
-      <class name="com.training.sanity.tests.ChangePassword">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ChangePassword@ea4a92b]" name="setUpBeforeClass" is-config="true" duration-ms="5727" started-at="2019-06-18T17:05:16Z" finished-at="2019-06-18T17:05:22Z">
+    <test name="Default test" duration-ms="30932" started-at="2019-07-22T11:02:00Z" finished-at="2019-07-22T11:02:31Z">
+      <class name="com.training.sanity.tests.DatabaseStudent">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.DatabaseStudent@42d80b78]" name="setUpBeforeClass" is-config="true" duration-ms="7885" started-at="2019-07-22T11:02:00Z" finished-at="2019-07-22T11:02:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="ChnagePasswordTest()[pri:0, instance:com.training.sanity.tests.ChangePassword@ea4a92b]" name="ChnagePasswordTest" duration-ms="8313" started-at="2019-06-18T17:05:22Z" finished-at="2019-06-18T17:05:30Z">
+        <test-method status="PASS" signature="validateStudent()[pri:0, instance:com.training.sanity.tests.DatabaseStudent@42d80b78]" name="validateStudent" duration-ms="21106" started-at="2019-07-22T11:02:08Z" finished-at="2019-07-22T11:02:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChnagePasswordTest -->
-      </class> <!-- com.training.sanity.tests.ChangePassword -->
+        </test-method> <!-- validateStudent -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.DatabaseStudent@42d80b78]" name="tearDown" is-config="true" duration-ms="1911" started-at="2019-07-22T11:02:29Z" finished-at="2019-07-22T11:02:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.DatabaseStudent -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
